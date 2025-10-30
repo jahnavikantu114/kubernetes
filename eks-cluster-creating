@@ -45,3 +45,7 @@ or you can make cluster in this way
 
  When You want to delete cluster
  eksctl delete cluster --name my-cluster
+
+#############auto scaling
+kubectl autoscale deployment web-app --cpu-percent=60 --min=3 --max=15
+
